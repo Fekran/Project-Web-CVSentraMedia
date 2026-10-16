@@ -1,8 +1,8 @@
-# SISTEM INVENTORY TOKO BANGUNAN BERBASIS WEB (NATIVE PHP)
+SISTEM INVENTORY CV SENTRA MEDIA BERBASIS WEB (NATIVE PHP)
 
-Sistem Inventory Toko Bangunan ini dirancang secara khusus untuk mengelola keluar-masuk stok barang, kategori, supplier, audit persediaan (stok opname), serta laporan nilai persediaan barang toko bangunan secara aman, modern, dan responsif.
+Sistem Inventory  ini dirancang secara khusus untuk mengelola keluar-masuk stok barang, kategori, supplier, audit persediaan, serta laporan nilai persediaan barang secara aman, modern, dan responsif.
 
-## 🛠️ SPESIFIKASI TEKNOLOGI
+SPESIFIKASI TEKNOLOGI
 - **Backend**: Native PHP 8+ (PDO Prepared Statement, Session Authentication, Tanpa Framework)
 - **Frontend**: HTML5, Tailwind CSS, Vanilla JS
 - **Grafik & Visual**: Chart.js, Font Awesome Icons
@@ -10,20 +10,20 @@ Sistem Inventory Toko Bangunan ini dirancang secara khusus untuk mengelola kelua
 
 ---
 
-## ⚙️ CARA INSTALASI LOKAL (XAMPP / LARAGON)
+CARA INSTALASI LOKAL (XAMPP / LARAGON)
 
-### 1. Ekstrak File Project
-Ekstrak isi dari file ZIP `inventory-toko-bangunan.zip` ke dalam folder root server lokal Anda:
+ 1. Ekstrak File Project
+Ekstrak isi dari file ZIP `inventory-toko.zip` ke dalam folder root server lokal Anda:
 - **XAMPP**: `C:\xampp\htdocs\inventory-toko-bangunan\`
 - **Laragon**: `C:\laragon\www\inventory-toko-bangunan\`
 
-### 2. Import Database MySQL
+ 2. Import Database MySQL
 1. Buka database manager Anda (seperti phpMyAdmin atau HeidiSQL).
 2. Buat database baru bernama: `db_inventory_toko`
 3. Pilih database tersebut, lalu lakukan **Import** file SQL yang berada di path berikut:
    `database/database_inventory.sql`
 
-### 3. Konfigurasi Koneksi Database
+ 3. Konfigurasi Koneksi Database
 Jika Anda menggunakan username/password database MySQL yang berbeda dari bawaan default (`root` tanpa password), Anda dapat mengubah pengaturannya pada file:
 `config/database.php`
 
@@ -34,13 +34,13 @@ define('DB_PASS', '');
 define('DB_NAME', 'db_inventory_toko');
 ```
 
-### 4. Jalankan Aplikasi
+ 4. Jalankan Aplikasi
 Buka web browser Anda dan akses alamat berikut:
 `http://localhost/inventory-toko-bangunan/`
 
 ---
 
-## 🔑 AKUN ADMIN DEFAULT
+ AKUN ADMIN DEFAULT
 Setelah berhasil mengimpor database, Anda dapat login menggunakan akun administrator default berikut:
 
 - **Username**: `admin`
@@ -49,7 +49,7 @@ Setelah berhasil mengimpor database, Anda dapat login menggunakan akun administr
 
 ---
 
-## 📂 STRUKTUR FOLDER APLIKASI
+ STRUKTUR FOLDER APLIKASI
 ```
 inventory-toko-bangunan/
 ├── assets/                  # File CSS dan Javascript kustom
@@ -66,7 +66,7 @@ inventory-toko-bangunan/
 
 ---
 
-## 🛡️ FITUR KEAMANAN YANG DITERAPKAN
+ FITUR KEAMANAN
 1. **PDO Prepared Statements**: Mencegah celah kerentanan SQL Injection pada seluruh input pengguna.
 2. **Session Security Check**: Membatasi hak akses halaman berdasarkan role user (Admin / Staff Gudang).
 3. **XSS Protection**: Sanitasi otomatis data cetak ke HTML menggunakan helper `htmlspecialchars` kustom.
