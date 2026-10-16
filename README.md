@@ -46,7 +46,6 @@ Setelah berhasil mengimpor database, Anda dapat login menggunakan akun administr
 - **Username**: `admin`
 - **Password**: `admin123`
 
-*Catatan: Segera ubah kata sandi default Anda di menu **Pengaturan > Ganti Kata Sandi** demi keamanan.*
 
 ---
 
