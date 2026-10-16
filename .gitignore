@@ -1,0 +1,18 @@
+# File konfigurasi database (berisi password - jangan diupload!)
+config/database.php
+
+# Folder uploads (file yang diupload user)
+uploads/*
+!uploads/.gitkeep
+
+# File reset password darurat
+reset_password.php
+
+# File sistem OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log files
+*.log
+error_log
